@@ -22,6 +22,7 @@ const useTypes = () => {
 
 		if (!listTypes.length) {
 			pokemonService.get("/types").then(fnThen).catch(fnError);
+			//data.types = ["Colorless","Darkness","Dragon","Fighting","Fire","Grass","Lightning","Metal","Psychic","Water"]
 		}
 	}, [listTypes, setData]);
 

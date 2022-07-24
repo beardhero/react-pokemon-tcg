@@ -8,8 +8,8 @@ import Icon from "../Components/Icon";
 import Loading from "../Components/Loading";
 import Title from "../Components/Title";
 
-import useTypes from "../Hooks/useTypes";
-//import TYPES from "../Mocks/Types";
+//import useTypes from "../Hooks/useTypes";
+import TYPES from "../Mocks/Types";
 
 const useStyles = createUseStyles({
 	ul: {
@@ -39,8 +39,8 @@ const useStyles = createUseStyles({
 
 const Types = () => {
 	const classes = useStyles();
-	//const { types } = TYPES;
-	const { types } = useTypes();
+	const { types } = TYPES;
+	//const { types } = useTypes();
 	const { pathname } = useLocation();
 
 	if (!types.length) return <Loading middle />;
@@ -48,7 +48,7 @@ const Types = () => {
 	return (
 		<Fragment>
 			<Title text="Select your favorite type...">
-				<img src={logo} alt="Logo Pokémon" className={classes.img} />
+				<img src={logo} alt="Hex World" className={classes.img} />
 			</Title>
 
 			<ul className={classes.ul}>

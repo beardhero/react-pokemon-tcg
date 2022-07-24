@@ -1,7 +1,6 @@
 import Colorless from "../img/Colorless.svg";
 import Darkness from "../img/Darkness.svg";
 import Dragon from "../img/Dragon.svg";
-import Fairy from "../img/Fairy.svg";
 import Fighting from "../img/Fighting.svg";
 import Fire from "../img/Fire.svg";
 import Grass from "../img/Grass.svg";
@@ -23,10 +22,6 @@ let defaultGlobal = {
     Dragon: {
       bg: "#796b44",
       img: Dragon,
-    },
-    Fairy: {
-      bg: "#EE90E6",
-      img: Fairy,
     },
     Fighting: {
       bg: "#8e431b",
